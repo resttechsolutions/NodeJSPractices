@@ -1,0 +1,24 @@
+
+  
+  <h1>{{titulo}}</h1>
+  <table>
+    <th>
+      <tr>
+        <td>Codigo</td>
+        <td>Descripcion</td>
+        <td>Precio</td>
+      </tr>
+    </th>
+    <tbody>
+      {{#each articulos}}
+        <tr>
+          <td>{{codigo}}</td>
+          <td>{{descripcion}}</td>
+          <td>{{precio}}</td>
+        </tr>
+      {{#each}}
+    </tbody>
+  </table>
+
+  <p>Descuentos vigentes el dia lunes: {{descuento.lunes}}</p>
+  <p>Descuentos vigentes el dia martes: {{descuento.martes}}</p>
