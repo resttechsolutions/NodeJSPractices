@@ -1,1 +1,42 @@
-<h1><%= title %></h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title%>></title>
+
+    <%- include("partial/head.html")%>
+</head>
+<body>
+    <%- include("partial/navigation.html")%>
+
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+                <div class="card animated flipInY">
+                    <div class="card-header bg-dark text-white text-left">
+                        Contact Me...
+                    </div>
+                    <div class="card-body">
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="" placeholder="message" id="" cols="30" rows="10" class="form-control"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-primary btn-block">
+                                    Save
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include("partial/footer.html") %>
+</body>
+</html>
